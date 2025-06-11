@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://i.ibb.co/1TkJm91/starry-night.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.music-player {
+    margin-bottom: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    animation: flipIn 1s ease;
+}
+
+.page img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.page p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+@keyframes flipIn {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
